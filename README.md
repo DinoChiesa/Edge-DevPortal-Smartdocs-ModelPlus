@@ -12,12 +12,14 @@ The SmartDocs logic, embedded in DRUPAL_ROOT/profiles/apigee/modules/custom/devc
 
 The goal is to have a sample payload that does the right thing - generate XML samples - for requests that have application/xml content-types.
 
+## Requirements
+
 Breaking down the requirements.
 
 * when the only content-type is application/xml or text/xml, then the sample should be rendered as an XML document
 * the CodeMirror editor needs to be placed into XML mode, when the payload is XML
 * if multiple content-types are accepted, then when toggling between json and XML, the sample payload ought to toggle as well. And the CodeMirror mode.
-* Anything else?
+* Anything else? - if there are others, please file a pull request.
 
 So far, the current implementation has been tested with a single sample OpenAPI Spec, [located here](https://api.myjson.com/bins/10k6cr).
 Which means, this is really a proof of concept.  Not working code. Not suitable for production use. We can aspire to deliver something more generally usable. To get there, I will need a number of sample specifications.
